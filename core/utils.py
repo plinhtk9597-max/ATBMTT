@@ -53,15 +53,7 @@ def bits_to_string(bits):
 def string_to_bits(s):
     """Chuyển chuỗi '0101...' thành list bit."""
     return [int(c) for c in s if c in "01"]
-
-def print_state(X, Y, Z, step=None, s=None):
-    """In trạng thái 3 thanh ghi."""
-    header = f"Bước {step}: " if step is not None else ""
-    print(f"{header}X={X} Y={Y} Z={Z}", end="")
-    if s is not None:
-        print(f" -> s={s}")
-    else:
-        print()
+    
 
 Bản đầy đủ
 # core/utils.py
@@ -241,22 +233,6 @@ def string_to_bits(s):
 # ============================================================
 # 4. HÀM HỖ TRỢ DEBUG VÀ DEMO
 # ============================================================
-
-def print_state(X, Y, Z, step=None, s=None):
-    """
-    In trạng thái 3 thanh ghi X, Y, Z (dùng khi demo).
-
-    Tham số:
-        X, Y, Z (list[int]): Trạng thái của 3 thanh ghi.
-        step (int, optional): Số bước hiện tại.
-        s (int, optional): Bit khóa vừa sinh ra (nếu có).
-    """
-    header = f"Bước {step}: " if step is not None else ""
-    print(f"{header}X={X} Y={Y} Z={Z}", end="")
-    if s is not None:
-        print(f" -> s={s}")
-    else:
-        print()
 
 
 def format_bits(bits, group_size=8):
