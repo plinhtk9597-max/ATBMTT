@@ -19,4 +19,4 @@ ATBMTT/
 ├── cli.py                # Giao diện dòng lệnh
 ├── main.py               # Điểm khởi chạy
 ├── README.md             # File này
-
+└── .gitignore
