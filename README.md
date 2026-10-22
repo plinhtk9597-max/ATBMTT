@@ -20,15 +20,3 @@ ATBMTT/
 ├── main.py               # Điểm khởi chạy
 ├── README.md             # File này
 └── .gitignore
-
-## Yêu cầu hệ thống
-
-- **Python 3.10** trở lên.
-- **Không cần cài thêm thư viện** (chỉ dùng thư viện chuẩn của Python).
-
-## Cách chạy chương trình
-
-Mở Terminal (Linux/Mac) hoặc CMD (Windows), di chuyển vào thư mục dự án:
-
-```bash
-python main.py
