@@ -28,7 +28,7 @@ ATBMTT/
 |---|---|
 | Kiều Phương Linh - Leader | TinyA5/1 + phân tích độ an toàn |
 | Trần Thu Trang | Bối cảnh + utils.py |
-| Trịnh Minh Châu | Mô tả thuật toán + sơ đồ khối + CLI |
+| Trịnh Minh Châu | Mô tả thuật toán + CLI |
 | Lê Hoàng Mai | Ví dụ tính tay + bộ kiểm thử |
 | Đào Quang Trung | So sánh với RC4 + A5/1 |
 
