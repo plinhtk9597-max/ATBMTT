@@ -6,7 +6,7 @@ Bài tập lớn môn *An toàn và Bảo mật Thông tin*. Nhóm cài đặt h
 
 ## Cấu trúc thư mục
 
-```text
+```
 ATBMTT/
 ├── core/
 │   ├── __init__.py
