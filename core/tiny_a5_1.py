@@ -10,12 +10,14 @@ class TinyA5_1:
         self.Y = key_bits[6:14]
         self.Z = key_bits[14:23]
         self.step = 0
+        self.log = []
 
     def reset(self):
         self.X = self.key_bits[0:6]
         self.Y = self.key_bits[6:14]
         self.Z = self.key_bits[14:23]
         self.step = 0
+        self.log = []
 
     def majority(self, a, b, c):
         return 1 if (a + b + c) >= 2 else 0
@@ -36,20 +38,27 @@ class TinyA5_1:
         self.step += 1
         x1, y3, z3 = self.X[1], self.Y[3], self.Z[3]
         m = self.majority(x1, y3, z3)
+        
         if verbose:
-            print(f"Bước {self.step}: x1={x1} y3={y3} z3={z3} -> m={m}")
+            self.log.append(f"Bước {self.step}: x1={x1} y3={y3} z3={z3} -> m={m}")
+        
         if x1 == m:
             self.clock_X()
-            if verbose: print("  Quay X")
+            if verbose: self.log.append("  Quay X")
+        
         if y3 == m:
             self.clock_Y()
-            if verbose: print("  Quay Y")
+            if verbose: self.log.append("  Quay Y")
+        
         if z3 == m:
             self.clock_Z()
-            if verbose: print("  Quay Z")
+            if verbose: self.log.append("  Quay Z")
+        
         s = self.X[5] ^ self.Y[7] ^ self.Z[8]
+        
         if verbose:
-            print(f"  s = {s}")
+            self.log.append(f"  s = {s}")
+        
         return s
 
     def encrypt(self, plaintext_bits, verbose=False):
