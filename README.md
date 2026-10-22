@@ -20,3 +20,20 @@ ATBMTT/
 ├── main.py               # Điểm khởi chạy
 ├── README.md             # File này
 └── .gitignore
+
+## Phân công nhóm
+
+| Thành viên | Công việc |
+|---|---|
+| Kiều Phương Linh - Leader | TinyA5/1 + phân tích độ an toàn |
+| Trang | Bối cảnh + utils.py |
+| Châu | Mô tả thuật toán + sơ đồ khối + CLI |
+| Hmai | Ví dụ tính tay + bộ kiểm thử |
+| Trung | So sánh với RC4 + A5/1 |
+
+## Tài liệu tham khảo
+
+1. Biryukov, A., Shamir, A., & Wagner, D. (2000). *Real Time Cryptanalysis of A5/1 on a PC*. FSE 2000.
+2. Golic, J. (1997). *Cryptanalysis of the Alleged A5 Stream Cipher*. EUROCRYPT 1997.
+3. Gendrullis, T., Novotny, M., & Rupp, A. (2008). *A Real-World Attack Breaking A5/1 within Hours*. ePrint 2008/147.
+4. Gundaram, P. K., Tentu, A. N., & Allu, S. N. (2022). *State Transition Analysis of GSM Encryption Algorithm A5/1*. Journal of Communications Software and Systems.
