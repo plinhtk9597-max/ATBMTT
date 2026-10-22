@@ -1,9 +1,15 @@
 """Bo kiem thu Tiny A5/1 va A5/1"""
+import sys
+import os
+
+# Thêm thư mục gốc vào sys.path để import được core/
+sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
+
 from pathlib import Path
 from tempfile import TemporaryDirectory
 
-from tiny_a5_1 import TinyA5_1
-from a5_1 import A5_1
+from core.tiny_a5_1 import TinyA5_1
+from core.a5_1 import A5_1
 
 
 def bits(s):
@@ -148,7 +154,7 @@ def test_real_file():
 
 
 def test_utils():
-    import utils
+    from core import utils
     for text in ["A", "Hello A5/1"]:
         recovered = utils.bits_to_text(utils.text_to_bits(text))
         assert recovered == text, f"Expected {text!r}; Actual {recovered!r}"
@@ -187,15 +193,16 @@ def main():
         else:
             passed += 1
             print(f"[PASS] {code} - {name}")
-            print(f"       {info}")
-print("-" * 75)
-print("TEST SUMMARY")
-print(f"Total Tests : {len(cases)}")
-print(f"Passed      : {passed}")
-print(f"Failed      : {failed}")
-print("-" * 75)
+            print(f"       {info}"
 
-return 0 if failed == 0 else 1
+    print("-" * 75)
+    print("TEST SUMMARY")
+    print(f"Total Tests : {len(cases)}")
+    print(f"Passed      : {passed}")
+    print(f"Failed      : {failed}")
+    print("-" * 75)
+
+    return 0 if failed == 0 else 1
 
 if __name__ == "__main__":
     raise SystemExit(main())
