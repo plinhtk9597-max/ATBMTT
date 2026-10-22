@@ -62,3 +62,6 @@ class TinyA5_1:
     def decrypt(self, ciphertext_bits, verbose=False):
         self.reset()
         return self.encrypt(ciphertext_bits, verbose=verbose)
+    
+    def get_log(self):
+        return self.log
