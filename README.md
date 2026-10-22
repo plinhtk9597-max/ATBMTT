@@ -27,10 +27,10 @@ ATBMTT/
 | Thành viên | Công việc |
 |---|---|
 | Kiều Phương Linh - Leader | TinyA5/1 + phân tích độ an toàn |
-| Trang | Bối cảnh + utils.py |
-| Châu | Mô tả thuật toán + sơ đồ khối + CLI |
-| Hmai | Ví dụ tính tay + bộ kiểm thử |
-| Trung | So sánh với RC4 + A5/1 |
+| Trần Thu Trang | Bối cảnh + utils.py |
+| Trịnh Minh Châu | Mô tả thuật toán + sơ đồ khối + CLI |
+| Lê Hoàng Mai | Ví dụ tính tay + bộ kiểm thử |
+| Đào Quang Trung | So sánh với RC4 + A5/1 |
 
 ## Tài liệu tham khảo
 
