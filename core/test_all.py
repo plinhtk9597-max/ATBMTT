@@ -193,7 +193,7 @@ def main():
         else:
             passed += 1
             print(f"[PASS] {code} - {name}")
-            print(f"       {info}"
+            print(f"       {info}")
 
     print("-" * 75)
     print("TEST SUMMARY")
