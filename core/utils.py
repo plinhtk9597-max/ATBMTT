@@ -1,4 +1,4 @@
-Bản rút gọn 1. 
+#Bản rút gọn 1. 
 # core/utils.py
 # Các hàm tiện ích chuyển đổi dữ liệu
 
@@ -55,7 +55,7 @@ def string_to_bits(s):
     return [int(c) for c in s if c in "01"]
     
 
-Bản đầy đủ
+#Bản đầy đủ
 # core/utils.py
 # Các hàm tiện ích chuyển đổi dữ liệu cho A5/1 và TinyA5/1
 #
