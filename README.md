@@ -16,6 +16,7 @@ ATBMTT/
 ├── tests/
 │   ├── __init__.py
 │   └── test_all.py       # Bộ kiểm thử
+├── demo_attack.py        # Minh họa tấn công vét cạn
 ├── cli.py                # Giao diện dòng lệnh
 ├── main.py               # Điểm khởi chạy
 ├── README.md             # File này
